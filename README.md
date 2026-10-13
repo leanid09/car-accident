@@ -17,6 +17,19 @@ Evidence and repair documentation for the August 7, 2026 rear collision at the T
 | `analysis/` | Independent frame-by-frame verification: extraction grids and method notes ([`analysis/ANALYSIS.md`](analysis/ANALYSIS.md)) |
 | `sources/` | Published references cited by the report |
 
+## Evidence status for the suspension claim
+
+| # | Link in the chain | Status |
+| --- | --- | --- |
+| 1 | Model Y stationary at contact (Tesla's own telemetry overlay) | ✅ In repo, verified |
+| 2 | Kia impact speed 6–9 MPH, measured two independent ways | ✅ In repo, verified |
+| 3 | Impact energy 4–9× the federal no-damage threshold (49 CFR 581.5(c)(5)) | ✅ In repo, computed openly |
+| 4 | Body measurably moved on its suspension at the contact frame (validated image-motion measurement) | ✅ In repo, reproducible script |
+| 5 | Symptoms (squeaks, right-rear inner tire wear) localized at the impact corner | ✅ Documented, owner-reported |
+| 6 | Four-wheel alignment measurement and component inspection on the rack | ⏳ **Pending — produced by the Collision Center at drop-off; to be added here as `exhibits/alignment/`** |
+
+Item 6 is the only link that requires the physical vehicle; Tesla's own Service Manual requires that check after a collision, and the report requests it in writing.
+
 ## Key finding
 
 Tesla's own telemetry overlay, burned into the dashcam export, shows the Model Y reversing at no more than 4 MPH, braking to **0 MPH before contact**, and remaining stationary while the Kia Soul (estimated 13–16 MPH approach, 6–9 MPH at impact) struck and slid across its rear.
