@@ -42,6 +42,12 @@ The side camera is rigidly mounted to the body, so once the vehicle is stationar
 | **24.000 s — contact** | **single vertical pulse: left half −2.10 px, right half −1.14 px, same direction, same frame** |
 | Stationary, 24.04–24.79 s | ≤0.2 px |
 
+**Validation** (exhibit: [`frame-grids/impact-pulse-validation.png`](frame-grids/impact-pulse-validation.png), differences amplified 6×):
+
+1. *Control for moving objects:* during 24.50–24.54 s the Kia is still sliding through the camera's view, yet the background strip's mean absolute change is only 0.15 — an object moving through the scene does not create the signal.
+2. *The contact pair* (23.958 → 24.000 s) measures 1.62 mean absolute change, about **10× the control**, with edge ghosting across the entire background (cloud edges, roofline, pole) — which only motion of the camera itself produces.
+3. *Two independent halves* of the strip shift in the same direction in the same frame.
+
 With the vehicle stationary, a one-frame, vertical, image-wide displacement at exactly the moment the rear camera shows the Kia's bodywork at the bumper means the body itself pitched — and a stationary car's body moves vertically only on its suspension. This is direct, measurable evidence that the impact force traveled through the structure and worked the suspension. The pixel magnitudes are reported as measured; converting them to millimetres depends on scene depth and is deliberately not attempted.
 
 A frame of `IMG_3887_2.MOV` read in this session also shows the in-car Dashcam viewer labeled "Emeryville — Fri, Aug 7, 2026 11:46:33" with the car's own clock at 12:49 pm — the original recording's date, time and place confirmed from the vehicle's screen (exhibit: [`../exhibits/in-car-playback_emeryville-aug7.png`](../exhibits/in-car-playback_emeryville-aug7.png)).
@@ -57,6 +63,8 @@ Kinetic energy the Kia carried into contact at the estimated 6–9 MPH:
 | 6 MPH | ≈4.9 kJ |
 | 9 MPH | ≈11.1 kJ |
 | Federal no-damage test (2.5 MPH barrier, a car of the Model Y's weight) | ≈1.3 kJ |
+
+The arithmetic, so anyone can check it (KE = ½mv²): 0.5 × 1,370 kg × (2.68 m/s)² = 4.9 kJ; 0.5 × 1,370 kg × (4.02 m/s)² = 11.1 kJ; test reference 0.5 × 2,059 kg × (1.12 m/s)² = 1.29 kJ.
 
 **This impact carried 3.8–8.6 times the energy of the federal bumper test.** That matters because the federal bumper standard's protective criteria — the only regime in which a car's "propulsion, suspension, steering, and braking systems shall remain in adjustment" — end at 2.5 MPH ([49 CFR 581.5(c)(5)](https://www.law.cornell.edu/cfr/text/49/581.5); paragraph numbering confirmed by [NHTSA interpretation 16-000385](https://www.nhtsa.gov/interpretations/16-000385-49-cfr-part-581-response-alliance-global)). Above that speed, no rule protects the suspension from being knocked out of adjustment; at 4–9× the test energy, alignment-relevant damage is a foreseeable outcome, not an exotic claim.
 
