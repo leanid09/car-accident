@@ -1,0 +1,38 @@
+# Independent verification of the footage — October 13, 2026
+
+This folder documents a second, independent pass over the raw evidence files in [`../videos/`](../videos/), performed with ffmpeg/ffprobe on October 13, 2026. It confirms the readings and speed estimates in [`../report/collision-report.md`](../report/collision-report.md) without relying on the original analysis.
+
+## File integrity and metadata (ffprobe)
+
+| File | Duration | Resolution | Location metadata | Notes |
+| --- | --- | --- | --- | --- |
+| `2026-08-07-04-46-26 4.MP4` | 30.6 s | 724×510, 24 fps | 37.8374, -122.2950 (Emeryville Supercharger) | Tesla app export, rear camera, telemetry overlay |
+| `2026-08-07-04-46-26 3.MP4` | 29.2 s | 724×510, 24 fps | 37.8374, -122.2950 | Tesla app export, side camera, telemetry overlay |
+| `IMG_3887_2.MOV` | 32.5 s | 1280×720, 30 fps | 37.7818, -122.4067 | iPhone 16 Pro Max, created 2026-08-07 12:49:17 PDT |
+| `IMG_3887_3.MOV` | 32.5 s | 1280×720, 30 fps | 37.7818, -122.4067 | Same creation date; a third uploaded copy (`IMG_3887_4.MOV`) was MD5-identical to this file and was not duplicated |
+
+The iPhone clips, filmed about an hour after the 11:46 AM collision, record the in-car Dashcam playback and independently confirm the original recording's date, time and place.
+
+## Telemetry readings observed (rear camera export)
+
+Read directly from the gear/speed overlay in the extracted frames (grids in [`frame-grids/`](frame-grids/)):
+
+| Clip time | Overlay reads | Scene |
+| --- | --- | --- |
+| 21.0 s | R, 0–1 MPH | Reversing begins; aisle behind is clear |
+| 22.0–23.0 s | R, 3–4 MPH | Reversing; Kia Soul appears, approaching along the aisle |
+| 23.5 s | R, 3 MPH | Kia closing |
+| 23.75 s | R, 1 MPH | Braking; Kia's nose almost at the bumper |
+| 24.0 s | **R, 0 MPH** | **Contact — the Kia's front corner fills the rear camera while the Model Y is stopped** |
+| 24.25–25.5 s | 0 MPH (gear to D ≈24.4 s) | The Kia's left side slides across the entire rear; the Model Y never moves |
+| 25.75–26.25 s | D, 0 MPH | The Kia clears the camera and stops a short distance past |
+
+## Kia speed cross-check (pass-through timing)
+
+The Kia Soul of this generation is 4.20 m long. Its nose reaches the fixed rear camera at ≈23.8–23.9 s and its rear bumper clears it at ≈25.5–25.8 s: 4.20 m past a fixed point in ≈1.7–1.9 s is an **average of about 5–6.5 MPH while decelerating**. Since the car was braking through the pass and stopped ≈2 s later, its speed at first contact was above that average — consistent with the report's **6–9 MPH at impact** and with the separately measured 13–16 MPH approach ([`../data/kia-speed-estimates.csv`](../data/kia-speed-estimates.csv)).
+
+## Method notes
+
+- Frames were extracted with ffmpeg at fixed timestamps, without alteration; grids in `frame-grids/` tile them in time order.
+- The Model Y's speeds need no estimation: they are burned into the export by Tesla's software.
+- All speed figures for the Kia are estimates from the footage; the raw clips are included so anyone can repeat the measurement.

@@ -1,0 +1,5 @@
+t_seconds,mph_low,mph_high,phase,method
+23.2,13,16,approach,frame-to-frame displacement scaled by Kia wheelbase (2.60 m) in side-camera frames 23.0-23.4 s
+24.0,6,9,at impact,bounded below by pass-by average and above by approach speed while decelerating
+24.65,5,6.5,average while passing,4.20 m Kia length passing the rear camera in ~1.7 s (23.8-25.5 s)
+25.8,0,0,stopped,Kia stationary roughly one car length past the Model Y
