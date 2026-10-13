@@ -24,3 +24,9 @@ All accessed October 13, 2026.
 - [Brake & Front End — Periodic alignment checks can detect damaged, worn or bent parts](https://www.brakeandfrontend.com/periodic-alignment-checks-can-detect-damaged-worn-or-bent-parts/)
 
 Not legal advice. The CVC and CDI entries are listed for reference only.
+
+## Verification additions (cloud session, October 13, 2026)
+
+- [Cornell LII — 49 CFR 581.5](https://www.law.cornell.edu/cfr/text/49/581.5) and [NHTSA interpretation 16-000385](https://www.nhtsa.gov/interpretations/16-000385-49-cfr-part-581-response-alliance-global) — confirm the "remain in adjustment" criterion for propulsion, suspension, steering and braking is paragraph 581.5(c)(5).
+- [Kelley Blue Book — 2020 Kia Soul specs](https://www.kbb.com/kia/soul/2020/specs) — curb weight 2,844 lb (2.0L trims; turbo 3,036 lb), used in the impact-energy calculation in `analysis/ANALYSIS.md`.
+- [Tesla Model Y Service Manual — Alignment Requirement, Suspension (2025 edition)](https://service.tesla.com/docs/ModelY/ServiceManual/2025/en-us/GUID-36116414-79E1-4EF0-91C3-3643C36586B2.html) — current revision of the page carrying the EPAS-check note.

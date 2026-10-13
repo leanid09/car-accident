@@ -31,6 +31,24 @@ Read directly from the gear/speed overlay in the extracted frames (grids in [`fr
 
 The Kia Soul of this generation is 4.20 m long. Its nose reaches the fixed rear camera at ≈23.8–23.9 s and its rear bumper clears it at ≈25.5–25.8 s: 4.20 m past a fixed point in ≈1.7–1.9 s is an **average of about 5–6.5 MPH while decelerating**. Since the car was braking through the pass and stopped ≈2 s later, its speed at first contact was above that average — consistent with the report's **6–9 MPH at impact** and with the separately measured 13–16 MPH approach ([`../data/kia-speed-estimates.csv`](../data/kia-speed-estimates.csv)).
 
+## Impact mechanics — how big this hit was
+
+Masses (published curb weights + 80 kg driver): Kia Soul 2,844 lb ([KBB 2020 Soul specs](https://www.kbb.com/kia/soul/2020/specs)) → ≈1,370 kg; Model Y Long Range AWD 4,363 lb → ≈2,059 kg.
+
+Kinetic energy the Kia carried into contact at the estimated 6–9 MPH:
+
+| Impact speed | Energy delivered |
+| --- | --- |
+| 6 MPH | ≈4.9 kJ |
+| 9 MPH | ≈11.1 kJ |
+| Federal no-damage test (2.5 MPH barrier, a car of the Model Y's weight) | ≈1.3 kJ |
+
+**This impact carried 3.8–8.6 times the energy of the federal bumper test.** That matters because the federal bumper standard's protective criteria — the only regime in which a car's "propulsion, suspension, steering, and braking systems shall remain in adjustment" — end at 2.5 MPH ([49 CFR 581.5(c)(5)](https://www.law.cornell.edu/cfr/text/49/581.5); paragraph numbering confirmed by [NHTSA interpretation 16-000385](https://www.nhtsa.gov/interpretations/16-000385-49-cfr-part-581-response-alliance-global)). Above that speed, no rule protects the suspension from being knocked out of adjustment; at 4–9× the test energy, alignment-relevant damage is a foreseeable outcome, not an exotic claim.
+
+Load-path note (general vehicle design, to be confirmed on this car by the shop): the impact centered on the liftgate and rear bumper; the rear bumper structure mounts to the body's rear structure, which also carries the rear suspension's mounting points — the same corner where the owner reports the right-rear wheel's inward lean and inner-shoulder tire wear.
+
+What this analysis deliberately does not claim: no video or calculation can see inside a suspension. The determination belongs to the four-wheel alignment measurement and component inspection requested in the report — Tesla's own Service Manual ("Alignment Requirement — Suspension", [2025 edition](https://service.tesla.com/docs/ModelY/ServiceManual/2025/en-us/GUID-36116414-79E1-4EF0-91C3-3643C36586B2.html)) notes the quick EPAS check should not be used to find collision suspension damage, pointing to the full four-wheel alignment check instead.
+
 ## Method notes
 
 - Frames were extracted with ffmpeg at fixed timestamps, without alteration; grids in `frame-grids/` tile them in time order.
