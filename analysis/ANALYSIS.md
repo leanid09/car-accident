@@ -31,6 +31,21 @@ Read directly from the gear/speed overlay in the extracted frames (grids in [`fr
 
 The Kia Soul of this generation is 4.20 m long. Its nose reaches the fixed rear camera at ≈23.8–23.9 s and its rear bumper clears it at ≈25.5–25.8 s: 4.20 m past a fixed point in ≈1.7–1.9 s is an **average of about 5–6.5 MPH while decelerating**. Since the car was braking through the pass and stopped ≈2 s later, its speed at first contact was above that average — consistent with the report's **6–9 MPH at impact** and with the separately measured 13–16 MPH approach ([`../data/kia-speed-estimates.csv`](../data/kia-speed-estimates.csv)).
 
+## Impact pulse — the body measurably moved on its suspension at 24.0 s
+
+The side camera is rigidly mounted to the body, so once the vehicle is stationary, any image-wide shift is body motion. Frame-to-frame global image motion was measured at 24 fps by FFT phase correlation on a static background strip (building + sky), with the strip's left and right halves measured independently as a cross-check (script: [`scripts/measure_impact_pulse.py`](scripts/measure_impact_pulse.py)).
+
+| Window | Frame-to-frame image motion |
+| --- | --- |
+| Reversing, 21.5–23.5 s | ≈5 px/frame — the car's own motion |
+| Stationary, 23.79–23.96 s | ≤0.2 px (noise floor) |
+| **24.000 s — contact** | **single vertical pulse: left half −2.10 px, right half −1.14 px, same direction, same frame** |
+| Stationary, 24.04–24.79 s | ≤0.2 px |
+
+With the vehicle stationary, a one-frame, vertical, image-wide displacement at exactly the moment the rear camera shows the Kia's bodywork at the bumper means the body itself pitched — and a stationary car's body moves vertically only on its suspension. This is direct, measurable evidence that the impact force traveled through the structure and worked the suspension. The pixel magnitudes are reported as measured; converting them to millimetres depends on scene depth and is deliberately not attempted.
+
+A frame of `IMG_3887_2.MOV` read in this session also shows the in-car Dashcam viewer labeled "Emeryville — Fri, Aug 7, 2026 11:46:33" with the car's own clock at 12:49 pm — the original recording's date, time and place confirmed from the vehicle's screen (exhibit: [`../exhibits/in-car-playback_emeryville-aug7.png`](../exhibits/in-car-playback_emeryville-aug7.png)).
+
 ## Impact mechanics — how big this hit was
 
 Masses (published curb weights + 80 kg driver): Kia Soul 2,844 lb ([KBB 2020 Soul specs](https://www.kbb.com/kia/soul/2020/specs)) → ≈1,370 kg; Model Y Long Range AWD 4,363 lb → ≈2,059 kg.
