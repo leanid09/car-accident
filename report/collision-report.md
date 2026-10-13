@@ -110,6 +110,8 @@ The footage establishes a rear impact into the nearly stopped vehicle, with the 
 
 Solid outlines mark what the footage and photos document; dashed outlines mark the reported symptoms for the shop to verify on the alignment rack.
 
+**Measured impact response (added October 13, 2026).** Two further results from the footage bear directly on the suspension question. First, frame-to-frame measurement of the side camera — rigidly mounted to the body — shows the stationary vehicle's body pitch vertically in a single frame at exactly 24.0 s, the moment of contact, against a ≤0.2 px noise floor before and after. The displacement appears in two independent regions of the image simultaneously and passes a moving-object control at ten times lower signal: the impact visibly worked the suspension of the stationary car. Second, at the estimated 6–9 MPH and the Kia's published 2,844 lb curb weight, the impact delivered roughly 4.9–11.1 kJ — about four to nine times the energy of the 2.5 MPH federal bumper test, the only regime in which [49 CFR 581.5(c)(5)](https://www.law.cornell.edu/cfr/text/49/581.5) requires a car's suspension to "remain in adjustment." Method, arithmetic, exhibits and a reproducible measurement script: [analysis/ANALYSIS.md](../analysis/ANALYSIS.md). These results do not replace the rack measurement requested above; they establish that the mechanism it tests for was present and active at impact.
+
 Requested at intake:
 
 - [ ] Four-wheel alignment measurement before repair; record all readings against factory specification, especially right-rear camber and toe.
