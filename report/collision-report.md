@@ -104,7 +104,7 @@ Symptoms the owner reports as arising after the collision, not present before it
 - Squeaking from the suspension, front and rear, while driving.
 - Right-rear wheel sitting with more inward lean than the others, with increased inner-shoulder tire wear on that wheel.
 
-The footage establishes a rear impact into the nearly stopped vehicle, with the load path through the rear bumper and liftgate. Whether specific suspension components were damaged is a mechanical determination that the footage alone cannot make; the owner requests that the Collision Center inspect, document findings, and attribute them in the estimate. For that inspection: the deepest panel deformation is on the left (driver) side of the rear, while the reported misalignment is at the right rear, so all four wheels should be measured rather than only the most visibly damaged corner.
+The footage establishes a rear impact into the nearly stopped vehicle, with the load path through the rear bumper and liftgate. Whether specific suspension components were damaged is a mechanical determination that the footage alone cannot make; the owner requests that the Collision Center inspect, document findings, and attribute them in the estimate. For that inspection: the deepest panel deformation is on the left (driver) side of the rear, while the reported misalignment is at the right rear, so all four wheels should be measured rather than only the most visibly damaged corner. For the front squeak specifically, fact-checked industry literature supports rear-impact damage mechanisms at the rear but documents no rear-to-front coupling — so the front finding rests entirely on the shop's measurements (alignment readings, SAI/included angle, component inspection), which is exactly what is requested below.
 
 ![Damage and symptom map](../charts/04-damage-symptom-map.png)
 
@@ -114,7 +114,7 @@ Solid outlines mark what the footage and photos document; dashed outlines mark t
 
 Requested at intake:
 
-- [ ] Four-wheel alignment measurement before repair; record all readings against factory specification, especially right-rear camber and toe.
+- [ ] Four-wheel alignment measurement before repair; record all readings against factory specification, especially right-rear camber and toe — including thrust angle and wheel setback (a rear subframe shifted by impact shows up as thrust-angle error and rear toe-link adjustment running out of range).
 - [ ] Inspect rear suspension on both sides — links, bushings, shock mounts — and rear subframe mounting points for impact-related displacement.
 - [ ] Inspect and road-test for the reported front and rear suspension squeak; document the source.
 - [ ] Photograph the right-rear tire wear pattern before any work.
