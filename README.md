@@ -12,7 +12,7 @@ Evidence and repair documentation for the August 7, 2026 rear collision at the T
 | `videos/` | Raw Tesla dashcam exports (rear + side camera, with Tesla's gear/speed overlay burned in) and iPhone video of the in-car playback |
 | `exhibits/dashcam-stills/` | Key frames from the footage: the approach, the contact at 0 MPH, the Kia sliding past |
 | `exhibits/photos/` | Photo of the rear on the morning of drop-off (Oct 13, 2026) |
-| `charts/` | Rendered figures used by the report: speed traces, site schematic, damage map, claim timeline |
+| `charts/` | 12 rendered figures: speed traces, site schematic, damage map, claim timeline (01–05), plus the measured impact pulse, full camera-motion record, energy comparisons, Kia deceleration, pulse validation and position–time analysis (06–12) |
 | `data/` | Machine-readable data: telemetry speed trace, Kia speed estimates, evidence file index |
 | `analysis/` | Independent frame-by-frame verification: extraction grids and method notes ([`analysis/ANALYSIS.md`](analysis/ANALYSIS.md)) |
 | `sources/` | Published references cited by the report |
